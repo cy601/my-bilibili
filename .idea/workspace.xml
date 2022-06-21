@@ -4,11 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a9eb72-de0f-4d5b-ab39-4e9cd7e4413a" name="Changes" comment="" />
+    <list default="true" id="85a9eb72-de0f-4d5b-ab39-4e9cd7e4413a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/MyBilibiliApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/DemoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/DemoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-api/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,8 +47,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "C:/Users/cy601/OneDrive/JAVA_project/BilibiliImate/myBilibili/myBilibili/myBilibili-dao/src/main/resources",
@@ -34,9 +63,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MTConfigurable"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -47,6 +76,26 @@
       <recent name="C:\Users\cy601\OneDrive\JAVA_project\BilibiliImate\myBilibili\myBilibili\myBilibili-api\src\main\resources" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="MyBilibiliApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="myBilibili-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.TanNgee.MyBilibiliApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TanNgee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MyBilibiliApp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,11 +104,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655735854300</updated>
-      <workItem from="1655735855592" duration="1023000" />
+      <workItem from="1655735855592" duration="6094000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
