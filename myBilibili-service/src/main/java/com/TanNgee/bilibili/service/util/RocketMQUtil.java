@@ -38,26 +38,19 @@ public class RocketMQUtil {
      */
     public static void asyncSendMsg(DefaultMQProducer producer, Message msg) throws Exception {
 
-        int messgaeCount = 2;
-        CountDownLatch2 countDownLatch = new CountDownLatch2(messgaeCount);
-        for (int i = 0; i < messgaeCount; i++) {
-            producer.send(msg, new SendCallback() {
-                @Override
-                public void onSuccess(SendResult sendResult) {
-                    countDownLatch.countDown();
-                    Logger logger = LoggerFactory.getLogger(RocketMQUtil.class);
-                    logger.info("异步发送消息成功，消息id：" + sendResult.getMsgId());
-                }
+        producer.send(msg, new SendCallback() {
+            @Override
+            public void onSuccess(SendResult sendResult) {
+                Logger logger = LoggerFactory.getLogger(RocketMQUtil.class);
+                logger.info("异步发送消息成功，消息id：" + sendResult.getMsgId());
+            }
 
-                @Override
-                public void onException(Throwable e) {
-                    countDownLatch.countDown();
-                    Logger logger = LoggerFactory.getLogger(RocketMQUtil.class);
-                    logger.info("异步发送失败");
-                    e.printStackTrace();
-                }
-            });
-        }
+            @Override
+            public void onException(Throwable e) {
+                e.printStackTrace();
+            }
+        });
+    }
 //
 //        producer.send(msg, new SendCallback() {
 //            @Override
@@ -71,5 +64,5 @@ public class RocketMQUtil {
 //                e.printStackTrace();
 //            }
 //        });
-    }
+
 }

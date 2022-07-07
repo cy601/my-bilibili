@@ -143,10 +143,9 @@
     </delete>
 
     <delete id="deleteRefreshTokenByUserId" parameterType="java.lang.Long">
-        delete from
-            t_refresh_token
-        where
-            userId = #{userId}
+        delete
+        from t_refresh_token
+        where userId = #{userId}
     </delete>
 
     <!--新增refreshtoken-->
@@ -160,12 +159,23 @@
     </insert>
 
 
-    <select id="getRefreshTokenDetail" parameterType="java.lang.String" resultType="com.TanNgee.bilibili.domain.RefreshTokenDetail">
+    <select id="getRefreshTokenDetail" parameterType="java.lang.String"
+            resultType="com.TanNgee.bilibili.domain.RefreshTokenDetail">
+        select *
+        from t_refresh_token
+        where refreshToken = #{refreshToken}
+    </select>
+
+    <!--    批量查询用户信息-->
+    <select id="batchGetUserInfoByUserIds" resultType="com.TanNgee.bilibili.domain.UserInfo">
         select
-            *
+        *
         from
-            t_refresh_token
+        t_user_info
         where
-            refreshToken = #{refreshToken}
+        userId in
+        <foreach collection="userIdList" item="userId" open="(" close=")" separator=",">
+            #{userId}
+        </foreach>
     </select>
 </mapper>

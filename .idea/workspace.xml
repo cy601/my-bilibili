@@ -5,72 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a9eb72-de0f-4d5b-ab39-4e9cd7e4413a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/RESTfulApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/UserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/UserAuthApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/UserFollowingApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/UserMomentsApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/aspect/ApiLimitedRoleAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/aspect/DataLimitedAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/support/UserSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/AuthRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/AuthRoleElementOperationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/AuthRoleMenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/FollowingGroupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/UserFollowingDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/UserMomentsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/UserRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/FollowingGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/JsonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/RefreshTokenDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/UserFollowing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/UserMoment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/annotation/ApiLimitedRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/annotation/DataLimited.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/auth/AuthElementOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/auth/AuthMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/auth/AuthRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/auth/AuthRoleElementOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/auth/AuthRoleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/auth/UserAuthorities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/auth/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/constant/AuthRoleConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/constant/UserConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/constant/UserMomentsConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/exception/ConditionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/authRole.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/authRoleElementOperation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/authRoleMenu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/followingGroup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/userFollowing.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/userMoments.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/userRole.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/AuthRoleElementOperationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/AuthRoleMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/AuthRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/FollowingGroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserFollowingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserMomentsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/config/JsonHttpMessageConverterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/config/RocketMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/handler/CommonGlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/AESUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/RSAUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/RocketMQUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/TokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/DanmuApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/FileApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/VideoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/DanmuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/FileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/UserCoinDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/VideoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/Danmu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/VideoCoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/VideoCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/VideoComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/VideoLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/domain/VideoTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/danmu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/file.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/userCoin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/video.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/DanmuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserCoinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/FastDFSUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/websocket/WebSocketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/MyBilibiliApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/MyBilibiliApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/DemoApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/src/main/java/com/TanNgee/bilibili/api/DemoApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myBilibili-api/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/src/main/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myBilibili-api/target/classes/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/target/classes/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-api/target/classes/com/TanNgee/MyBilibiliApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/target/classes/com/TanNgee/MyBilibiliApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-api/target/classes/com/TanNgee/bilibili/api/DemoApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/target/classes/com/TanNgee/bilibili/api/DemoApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-api/target/classes/com/TanNgee/bilibili/api/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-api/target/classes/com/TanNgee/bilibili/api/UserApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/java/com/TanNgee/bilibili/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-dao/src/main/resources/mapper/user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-dao/target/classes/com/TanNgee/bilibili/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-dao/target/classes/com/TanNgee/bilibili/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-dao/target/classes/mapper/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-dao/target/classes/mapper/user.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myBilibili-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/config/RocketMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/config/RocketMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/MD5Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/RocketMQUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/util/RocketMQUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/config/RocketMQConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/config/RocketMQConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/config/RocketMQConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/config/RocketMQConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/util/MD5Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/util/RocketMQUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/util/RocketMQUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/util/RocketMQUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/myBilibili-service/target/classes/com/TanNgee/bilibili/service/util/RocketMQUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +184,9 @@
       <updated>1655735854300</updated>
       <workItem from="1655735855592" duration="23248000" />
       <workItem from="1656079461732" duration="13261000" />
-      <workItem from="1656423880238" duration="22177000" />
+      <workItem from="1656423880238" duration="23071000" />
+      <workItem from="1656732020764" duration="1531000" />
+      <workItem from="1656760919663" duration="34384000" />
     </task>
     <servers />
   </component>
@@ -229,6 +215,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myBilibili-service/src/main/java/com/TanNgee/bilibili/service/VideoService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

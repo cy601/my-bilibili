@@ -1,8 +1,11 @@
 package com.TanNgee.bilibili.service.util;
 
 import org.apache.commons.codec.digest.DigestUtils;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.io.ByteArrayOutputStream;
 
 /**
  * MD5加密
@@ -33,5 +36,23 @@ public class MD5Util {
 		} else {
 			return content.getBytes();
 		}
+	}
+
+	/**
+	 * 获取文件md5加密后的字符串
+	 * @param file
+	 * @return
+	 * @throws Exception
+	 */
+	public static String getFileMD5(MultipartFile file) throws Exception {
+		InputStream fis = file.getInputStream();
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		byte[] buffer = new byte[1024];
+		int byteRead;
+		while((byteRead = fis.read(buffer)) > 0){
+			baos.write(buffer, 0, byteRead);
+		}
+		fis.close();
+		return DigestUtils.md5Hex(baos.toByteArray());
 	}
 }
