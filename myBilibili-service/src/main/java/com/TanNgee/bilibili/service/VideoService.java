@@ -4,12 +4,15 @@ import com.TanNgee.bilibili.dao.VideoDao;
 import com.TanNgee.bilibili.domain.*;
 import com.TanNgee.bilibili.domain.exception.ConditionException;
 import com.TanNgee.bilibili.service.util.FastDFSUtil;
+import com.TanNgee.bilibili.service.util.IpUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import eu.bitwalker.useragentutils.UserAgent;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -322,7 +325,7 @@ public class VideoService {
     }
 
     public Map<String, Object> getVideoDetails(Long videoId) {
-        Video video =  videoDao.getVideoDetails(videoId);
+        Video video = videoDao.getVideoDetails(videoId);
         Long userId = video.getUserId();
         User user = userService.getUserInfo(userId);
         UserInfo userInfo = user.getUserInfo();
@@ -331,5 +334,54 @@ public class VideoService {
         result.put("video", video);
         result.put("userInfo", userInfo);
         return result;
+    }
+
+    /**
+     * 添加播放记录
+     *
+     * @param videoView
+     * @param request
+     */
+    public void addVideoView(VideoView videoView, HttpServletRequest request) {
+        Long userId = videoView.getUserId();
+        Long videoId = videoView.getVideoId();
+        //生成clientId
+        String agent = request.getHeader("User-Agent");
+        UserAgent userAgent = UserAgent.parseUserAgentString(agent);
+
+        String clientId = String.valueOf(userAgent.getId());
+
+        String ip = IpUtil.getIP(request);  //获取用户IP
+
+        Map<String, Object> params = new HashMap<>();   //请求的参数，使用Map存储
+
+        if (userId != null) {  //用户登录状态
+            params.put("userId", userId);
+        } else {
+            params.put("ip", ip);
+            params.put("clientId", clientId);
+        }
+
+
+        Date now = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        params.put("today", sdf.format(now));
+        params.put("videoId", videoId);
+
+
+        //添加观看记录
+        VideoView dbVideoView = videoDao.getVideoView(params);   //查询是否已经有观看记录
+
+        if (dbVideoView == null) {
+            videoView.setIp(ip);
+            videoView.setClientId(clientId);
+            videoView.setCreateTime(new Date());
+            videoDao.addVideoView(videoView);
+        }
+    }
+
+    public Integer getVideoViewCounts(Long videoId) {
+        return videoDao.getVideoViewCounts(videoId);
+
     }
 }

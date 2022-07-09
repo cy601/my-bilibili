@@ -4,20 +4,16 @@
 
 
     <insert id="addDanmu" parameterType="com.TanNgee.bilibili.domain.Danmu">
-        insert into
-            t_danmu(
-            userId,
-            videoId,
-            content,
-            danmuTime,
-            createTime
-        )values(
-                   #{userId},
-                   #{videoId},
-                   #{content},
-                   #{danmuTime},
-                   #{createTime}
-               )
+        insert into t_danmu(userId,
+                            videoId,
+                            content,
+                            danmuTime,
+                            createTime)
+        values (#{userId},
+                #{videoId},
+                #{content},
+                #{danmuTime},
+                #{createTime})
     </insert>
 
     <select id="getDanmus" parameterType="java.util.Map" resultType="com.TanNgee.bilibili.domain.Danmu">

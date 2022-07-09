@@ -89,6 +89,19 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
             <version>2.5.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <version>2.5.1</version>
+        </dependency>
+
+        <!--        引入useragent解析类  解析浏览器传过来的User-Agent-->
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>1.21</version>
+        </dependency>
+
     </dependencies>
 
     <modules>

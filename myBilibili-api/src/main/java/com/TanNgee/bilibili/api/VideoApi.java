@@ -2,6 +2,7 @@ package com.TanNgee.bilibili.api;
 
 import com.TanNgee.bilibili.api.support.UserSupport;
 import com.TanNgee.bilibili.domain.*;
+import com.TanNgee.bilibili.service.ElasticSearchService;
 import com.TanNgee.bilibili.service.VideoService;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -24,6 +25,8 @@ public class VideoApi {
     @Autowired
     private UserSupport userSupport;
 
+    @Autowired
+    private ElasticSearchService elasticSearchService;
 
     /**
      * 视频投稿
@@ -37,7 +40,7 @@ public class VideoApi {
         video.setUserId(userId);
         videoService.addVideos(video);
 //        //在es中添加一条视频数据
-//        elasticSearchService.addVideo(video);
+        elasticSearchService.addVideo(video);
         return JsonResponse.success();
     }
 
@@ -246,13 +249,39 @@ public class VideoApi {
 
     /**
      * 获取视频详情
+     *
      * @param videoId
      * @return
      */
     @GetMapping("/video-details")
-    public JsonResponse<Map<String, Object>> getVideoDetails(@RequestParam Long videoId){
+    public JsonResponse<Map<String, Object>> getVideoDetails(@RequestParam Long videoId) {
         Map<String, Object> result = videoService.getVideoDetails(videoId);
         return new JsonResponse<>(result);
     }
 
+    /**
+     * 添加视频观看记录
+     */
+    @PostMapping("/video-views")
+    public JsonResponse<String> addVideoView(@RequestBody VideoView videoView,
+                                             HttpServletRequest request){
+        Long userId;
+        try{
+            userId = userSupport.getCurrentUserId();
+            videoView.setUserId(userId);
+            videoService.addVideoView(videoView, request);
+        }catch (Exception e){
+            videoService.addVideoView(videoView, request);
+        }
+        return JsonResponse.success();
+    }
+
+    /**
+     * 查询视频播放量
+     */
+    @GetMapping("/video-view-counts")
+    public JsonResponse<Integer> getVideoViewCounts(@RequestParam Long videoId){
+        Integer count = videoService.getVideoViewCounts(videoId);
+        return new JsonResponse<>(count);
+    }
 }

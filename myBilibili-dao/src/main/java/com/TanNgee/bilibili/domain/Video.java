@@ -1,28 +1,34 @@
 package com.TanNgee.bilibili.domain;
-import org.springframework.data.annotation.Id;
+
 //import org.springframework.data.elasticsearch.annotations.Document;
 //import org.springframework.data.elasticsearch.annotations.Field;
 //import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+
 import java.util.Date;
 import java.util.List;
+
 /**
  * @Author TanNgee
  * @Date 2022/7/2 22:14
  **/
+@Document(indexName = "videos")   //ES 索引名称，添加字段会自动创建
 public class Video {
-    @Id
+    @Id  //ES 主键
     private Long id;
 
-//    @Field(type = FieldType.Long)
+    @Field(type = FieldType.Long)  //数据类型
     private Long userId;//用户id
 
     private String url; //视频链接
 
     private String thumbnail;//封面
 
-//    @Field(type = FieldType.Text)
+    @Field(type = FieldType.Text)
     private String title; //标题
 
     private String type;// 0自制 1转载
@@ -33,13 +39,13 @@ public class Video {
 
     private List<VideoTag> videoTagList;//标签列表
 
-//    @Field(type = FieldType.Text)
+    @Field(type = FieldType.Text)
     private String description;//简介
 
-//    @Field(type = FieldType.Date)
+    @Field(type = FieldType.Date)
     private Date createTime;
 
-//    @Field(type = FieldType.Date)
+    @Field(type = FieldType.Date)
     private Date updateTime;
 
     public Long getId() {

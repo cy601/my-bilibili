@@ -1,17 +1,25 @@
 package com.TanNgee.bilibili.domain;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+
 import java.util.Date;
 
 /**
  * @Author TanNgee
  * @Date 2022/6/22 22:10
  **/
+@Document(indexName = "user-infos")
 public class UserInfo {
 
+    @Id
     private Long id;
 
     private Long userId;
 
+    @Field(type = FieldType.Text)   //表示该字段是一个文本
     private String nick;
 
     private String avatar;
@@ -22,19 +30,13 @@ public class UserInfo {
 
     private String birth;
 
+    @Field(type = FieldType.Date)  //表示该字段是一个文本，日期类型，默认不建立索引
     private Date createTime;
 
+    @Field(type = FieldType.Date)
     private Date updateTime;
 
     private Boolean followed;
-
-    public Boolean getFollowed() {
-        return followed;
-    }
-
-    public void setFollowed(Boolean followed) {
-        this.followed = followed;
-    }
 
     public Long getId() {
         return id;
@@ -106,5 +108,13 @@ public class UserInfo {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public Boolean getFollowed() {
+        return followed;
+    }
+
+    public void setFollowed(Boolean followed) {
+        this.followed = followed;
     }
 }
